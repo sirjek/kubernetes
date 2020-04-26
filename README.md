@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![sirjek](https://circleci.com/gh/sirjek/kubernetes.svg?style=svg)](https://circleci.com/gh/sirjek/kubernetes)
+
 
 ## Project Overview
 
