@@ -8,11 +8,11 @@ dockerpath=eugenek19/api:latest
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run newapp --image=$dockerpath --port=8080
+kubectl run newapp  --generator=run-pod/v1 --image=$dockerpath --port=8080
 # Step 3:
 # List kubernetes pods
 kubectl get pods
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward deployment/newapp 8080:80
+kubectl port-forward pod/newapp 8080:80
 
